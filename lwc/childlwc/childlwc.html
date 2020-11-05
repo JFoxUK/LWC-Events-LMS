@@ -1,0 +1,10 @@
+<template>
+    <lightning-card  title="Passed via API from Parent to child">
+        <p>The parent value is -> {parentvalue}</p>
+    </lightning-card>
+    <lightning-card  title="Custom Event from Child to Parent">
+        <lightning-button label="Send Message" onclick={handleClick}></lightning-button>
+        <p class="slds-var-p-horizontal_small">Send a custom event to the parent component</p>
+        <lightning-input type="text" onchange={handleChangeChild} value={childMessage}></lightning-input>
+    </lightning-card>
+</template>
